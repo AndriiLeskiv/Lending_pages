@@ -40,7 +40,7 @@
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="btn"> Contact us</a>
+                <a href="#" class="btn" id="myBtn"> Contact us</a>
                 <button type="button" class="mobile-nav-button">
                     <span class="mobile-nav-button__icon"></span>
                 </button>
@@ -79,8 +79,8 @@
                         </div>
                     </div>
                     <div class="home_bg_img">
-                        <img src="./img/home_img.svg" alt="Background cover">
-                        <img src="./img/531.svg" alt="Background cover" class="logo_back">
+                        <img src="./img/home_img.png" alt="Background cover">
+                        <img src="./img/531.png" alt="Background cover" class="logo_back">
                     </div>
                 </div>
         </section>
@@ -109,10 +109,10 @@
                         <div class="how_does_main">
                             <div class="content_padding">
                                 <p>1</p>
-                                <img src="./img/Ellipse.png" alt="Ellipse">
+                                <img src="./img/elipse.svg" alt="Ellipse">
                             </div>
                             <div>
-                                <img src="./img/Ellipse.png" alt="Ellipse">
+                                <img src="./img/elipse.svg" alt="Ellipse">
                                 <p>0</p>
                             </div>
                         </div>
@@ -404,7 +404,56 @@
             </div>
         </div>
     </footer>
-    
+
+    <!-- Modal window  -->
+    <div class="modal_contact">
+        <span class="close_modal">&times;</span>
+        <div class="close_area"></div>
+        <div class="modal_logo">
+            <img src="./img/Logo.svg" alt="">
+        </div>                    
+        <h2>Questions? Write to us and we will Be Happy to help you</h2>
+        <div class="modal_flex">
+            <div class="modal_form">
+                <form action="/">
+                    <div class="question_header">
+                        <div class="modal_bord">
+                            <img src="img/profile.svg"/>
+                            <input type="text" class="form_send" placeholder="Your first name"/>
+                        </div>
+                        <div class="modal_bord">
+                            <img src="img/profile.svg"/>
+                            <input type="text" class="form_send" placeholder="Your last name"/>
+                        </div>
+                    </div>
+                    <div class="question_header">
+                        <div class="modal_bord">
+                            <img src="./img/Vector.svg"/>
+                            <input type="text" class="form_send" placeholder="Your phone number"/>
+                        </div>
+                        <div class="modal_bord">
+                            <img src="img/sms.svg"/>
+                            <input type="text" class="form_send" placeholder="Your email"/>
+                        </div>
+                    </div>
+                    <div class="question_header mt-0">
+                        <div class="modal_texter">
+                            <img src="./img/message-text.svg"/>
+                            <textarea id="story" class="colortext" placeholder="Your message" rows="4" cols="56"></textarea>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: end;">
+                        <a href="#" class="btn question_btn">Discuss the project</a>
+                        <img src="./img/35.png" class="img_back"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        
+    </style>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

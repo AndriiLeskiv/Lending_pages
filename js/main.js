@@ -9,7 +9,7 @@ mobileNavButton.addEventListener('click', function () {
 	document.body.classList.toggle('no-scroll');
 });
 
-
+/* ================= Swiper ========================= */
 let mySliderimg = new Swiper('.image-slider', {
     spaceBetween: 30,
     autoHeight: true,
@@ -66,3 +66,17 @@ autoHeight: true,
 
 mySliderimg.controller.control = mySlidertxt;
 mySlidertxt.controller.control = mySliderimg;
+
+/* ================= Modal window ========================= */
+
+let btn = document.getElementById("myBtn");
+let modal = document.querySelector(".modal_contact");
+let close_modal = document.querySelector(".close_modal");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+close_modal.onclick = function() {
+    modal.style.display = "none";
+}
